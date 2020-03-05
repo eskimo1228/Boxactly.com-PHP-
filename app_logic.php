@@ -45,20 +45,20 @@ if (isset($_POST['reset-password'])) {
 
     $mail = new PHPMailer();//new PHPMailer(true) : debug case
     
-    // $mail->IsSMTP(); // enable SMTP
-    // $mail->SMTPDebug = 2; // debugging: 1 = errors and messages, 2 = messages only
-    // $mail->SMTPAuth = true; // authentication enabled
-    // $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
-    // $mail->Host = "smtp.gmail.com";
-    // $mail->Port = 587; // or 587
-    // $mail->SetFrom("info@exam.com", "Admin");
-    // $mail->IsHTML(true);
-    // $mail->Username = "poalabear1228@gmail.com";
-    // $mail->Password = "theStrongestPasswordEver";
+    $mail->IsSMTP(); // enable SMTP
+    $mail->SMTPDebug = 2; // debugging: 1 = errors and messages, 2 = messages only
+    $mail->SMTPAuth = true; // authentication enabled
+    $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
+    $mail->Host = "smtp.gmail.com";
+    $mail->Port = 587; // or 587
+    $mail->SetFrom("info@exam.com", "Admin");
+    $mail->IsHTML(true);
+    $mail->Username = "poalabear1228@gmail.com";
+    $mail->Password = "theStrongestPasswordEver";
     
-    // $mail->Subject = "Reset your password.";
-    // $mail->Body = $msg;
-    // $mail->AddAddress($to);
+    $mail->Subject = "Reset your password.";
+    $mail->Body = $msg;
+    $mail->AddAddress($to);
  
     if(!$mail->Send()) {
       header('location: login.php');
