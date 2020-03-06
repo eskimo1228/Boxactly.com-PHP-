@@ -34,7 +34,7 @@ if (isset($_POST['reset-password'])) {
     $sql = "INSERT INTO password_reset(email, token) VALUES ('$email', '$token')";
     $results = mysqli_query($link, $sql);
 
-    // $_SESSION['token'] = $token;
+    $_SESSION['token'] = $token;
     // Send email to user with the token in a link they can click on
     $to = $email;
     $base_url="http://".$_SERVER['SERVER_NAME'].dirname($_SERVER["REQUEST_URI"].'?').'/';
@@ -42,7 +42,6 @@ if (isset($_POST['reset-password'])) {
     $msg = "Hi there, click on this <a href='".$base_url."reset-password.php?token=" . $token . "'>Reset Password</a> to reset your password on our site";
 
     $msg = wordwrap($msg,70);
-// var_dump($msg);exit;
     // $mail = new PHPMailer();//new PHPMailer(true) : debug case
     
     //$message = "Your Activation Code is ".$code."";
@@ -64,7 +63,9 @@ if (isset($_POST['reset-password'])) {
     $subject="Reset your password";
     $from = 'info@exam.com';
     $body = $msg;
-    $headers = "From:".$from;
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $headers .= 'From: '.$from;
     mail($to, $subject, $body, $headers);
  
     // if(!$mail->Send()) {
