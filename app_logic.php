@@ -42,29 +42,36 @@ if (isset($_POST['reset-password'])) {
     $msg = "Hi there, click on this <a href='".$base_url."reset-password.php?token=" . $token . "'>Reset Password</a> to reset your password on our site";
 
     $msg = wordwrap($msg,70);
+// var_dump($msg);exit;
+    // $mail = new PHPMailer();//new PHPMailer(true) : debug case
+    
+    //$message = "Your Activation Code is ".$code."";
 
-    $mail = new PHPMailer();//new PHPMailer(true) : debug case
+    // $mail->IsSMTP(); // enable SMTP
+    // $mail->SMTPDebug = 2; // debugging: 1 = errors and messages, 2 = messages only
+    // $mail->SMTPAuth = true; // authentication enabled
+    // $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
+    // $mail->Host = "smtp.gmail.com";
+    // $mail->Port = 587; // or 587
+    // $mail->SetFrom("info@exam.com", "Admin");
+    // $mail->IsHTML(true);
+    // $mail->Username = "";
+    // $mail->Password = "theStrongestPasswordEver";
     
-    $mail->IsSMTP(); // enable SMTP
-    $mail->SMTPDebug = 2; // debugging: 1 = errors and messages, 2 = messages only
-    $mail->SMTPAuth = true; // authentication enabled
-    $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
-    $mail->Host = "smtp.gmail.com";
-    $mail->Port = 587; // or 587
-    $mail->SetFrom("info@exam.com", "Admin");
-    $mail->IsHTML(true);
-    $mail->Username = "poalabear1228@gmail.com";
-    $mail->Password = "theStrongestPasswordEver";
-    
-    $mail->Subject = "Reset your password.";
-    $mail->Body = $msg;
-    $mail->AddAddress($to);
+    // $mail->Subject = "Reset your password.";
+    // $mail->Body = $msg;
+    // $mail->AddAddress($to);
+    $subject="Reset your password";
+    $from = 'info@exam.com';
+    $body = $msg;
+    $headers = "From:".$from;
+    mail($to, $subject, $body, $headers);
  
-    if(!$mail->Send()) {
-      header('location: login.php');
-    } else {
+    // if(!$mail->Send()) {
+    //   header('location: login.php');
+    // } else {
       header('location: login.php?email=' . $email);
-    }
+    // }
 
   }
 }
