@@ -67,13 +67,8 @@ if (isset($_POST['reset-password'])) {
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $headers .= 'From: '.$from;
     mail($to, $subject, $body, $headers);
- 
-    // if(!$mail->Send()) {
-    //   header('location: login.php');
-    // } else {
-      header('location: login.php?email=' . $email);
-    // }
 
+    header('location: login.php?email=' . $email);
   }
 }
 

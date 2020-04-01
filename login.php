@@ -101,22 +101,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
   gtag('config', 'UA-146833685-1');
 </script>
-
-    
-    
     <!-- ========== Meta Tags ========== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Login to access your storage solutions.">
-
     <!-- ========== Page Title ========== -->
     <title>Welcome back to Boxactly. Please login to continue to your storage solution.</title>
-
-
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
@@ -154,12 +147,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <!-- Header
     ============================================= -->
     <header id="home">
-
         <!-- Start Navigation -->
         <nav class="navbar navbar-default navbar-sticky bootsnav">
-
             <div class="container">
-
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav button theme">
                     <ul>
