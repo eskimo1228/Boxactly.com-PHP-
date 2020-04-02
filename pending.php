@@ -1,18 +1,4 @@
 <?php include('app_logic.php'); ?>
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Password Reset PHP</title>
-	<link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-	<form class="login-form" action="" method="post" style="text-align: center;">
-		<p>We sent an email to  <b><?php echo $_GET['email'] ?></b> to help you recover your account.</p>
-	    <p>Please login into your email account and click on the link we sent to reset your password</p>
-	</form>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,22 +12,15 @@
 
   gtag('config', 'UA-146833685-1');
 </script>
-
-    
-    
     <!-- ========== Meta Tags ========== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Login to access your storage solutions.">
-
     <!-- ========== Page Title ========== -->
     <title>Welcome back to Boxactly. Please login to continue to your storage solution.</title>
-
-
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
@@ -79,12 +58,9 @@
     <!-- Header
     ============================================= -->
     <header id="home">
-
         <!-- Start Navigation -->
         <nav class="navbar navbar-default navbar-sticky bootsnav">
-
             <div class="container">
-
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav button theme">
                     <ul>
@@ -112,10 +88,8 @@
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
-
         </nav>
         <!-- End Navigation -->
-
     </header>
     <!-- End Header -->
 
@@ -197,7 +171,6 @@
     <script src="assets/js/count-to.js"></script>
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
-
 </body>
 </html>
 
