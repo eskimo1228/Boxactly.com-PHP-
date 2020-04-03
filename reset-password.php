@@ -53,9 +53,7 @@
     <header id="home">
         <!-- Start Navigation -->
         <nav class="navbar navbar-default navbar-sticky bootsnav">
-
             <div class="container">
-
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav button theme">
                     <ul>
@@ -65,7 +63,6 @@
                     </ul>
                 </div>
                 <!-- End Atribute Navigation -->
-
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">

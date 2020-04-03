@@ -105,9 +105,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
   gtag('config', 'UA-146833685-1');
 </script>
-
-    
-    
     <!-- ========== Meta Tags ========== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
