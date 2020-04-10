@@ -68,7 +68,6 @@
                     </ul>
                 </div>
                 <!-- End Atribute Navigation -->
-
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
@@ -127,7 +126,6 @@
     <!-- End Banner -->
     <!-- Start Footer
     ============================================= -->
-
     <footer>
         <!-- Start Footer Bottom -->
         <div class="footer-bottom">
@@ -139,7 +137,6 @@
                           <p>
                               <i>Make space work for you.</i>
                           </p>
-
                         </div>
                         <div class="col-md-6 text-right link">
                             <ul>
@@ -152,7 +149,6 @@
                                 <li>
                                   <a href="">Privacy</a>
                                 </li>
-
                             </ul>
                         </div>
                     </div>
@@ -167,7 +163,6 @@
         <!-- End Footer Bottom -->
     </footer>
     <!-- End Footer -->
-
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="assets/js/jquery-1.12.4.min.js"></script>
