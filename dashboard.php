@@ -7,14 +7,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- ========== Page Title ========== -->
     <title>DashBoard</title>
-
-
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
@@ -28,30 +24,21 @@
     <link href="assets/css/bootstrap4.css" rel="stylesheet" />
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
-
     <script src="https://widget.prefinery.com/widget/v2/20ydlte3.js" async defer></script>
-
     <!-- ========== Google Fonts ========== -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
-
 </head>
-
 <body>
-
     <!-- Preloader Start -->
     <div class="se-pre-con"></div>
     <!-- Preloader Ends -->
-
     <!-- Header
     ============================================= -->
     <header id="home">
-
         <!-- Start Navigation -->
         <nav class="navbar navbar-default navbar-sticky bootsnav">
-
             <div class="container">
-
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
@@ -62,7 +49,6 @@
                     </a>
                 </div>
                 <!-- End Header Navigation -->
-
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
@@ -81,17 +67,14 @@
                         <li>
                             <a href="logout.php" class="smooth-menu">Log Out</a>
                         </li>
-                        
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
-
         </nav>
         <!-- End Navigation -->
     </header>
     <!-- End Header -->
-
     <!-- Start Content
     ============================================= -->
     <div class="container">
@@ -169,7 +152,6 @@
                             <p>
                                 <i>Make space work for you.</i>
                             </p>
-
                         </div>
                         <div class="col-md-6 text-right link">
                             <ul>
@@ -182,7 +164,6 @@
                                 <li>
                                     <a href="">Privacy</a>
                                 </li>
-
                             </ul>
                         </div>
                     </div>
@@ -197,7 +178,6 @@
         <!-- End Footer Bottom -->
     </footer>
     <!-- End Footer -->
-
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="assets/js/jquery-1.12.4.min.js"></script>
@@ -212,6 +192,5 @@
     <script src="assets/js/count-to.js"></script>
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
-
 </body>
 </html>
