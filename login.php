@@ -1,20 +1,16 @@
 <?php
 // Initialize the session
 session_start();
- 
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
   header("location: dashboard.php");
   exit;
 }
- 
 // Include config file
 require_once "config.php";
- 
 // Define variables and initialize with empty values
 $email = $password = "";
 $username_err = $password_err = "";
- 
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
@@ -258,127 +254,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </div>
     <!-- End Banner -->
 
-
-
-
-
-
-
     <!-- Start Footer
     ============================================= -->
 
     <footer>
-      <!---
-        <div class="container">
-            <div class="row">
-                <div class="f-items">
-                    <div class="col-md-4 col-sm-6 equal-height item">
-                        <div class="f-item about">
-                            <img src="assets/img/logo.png" alt="Logo">
-                            <p>
-                                Boxactly is exactly what you need to make space work for you.
-                            </p>
-
-
-                            <h5>Follow Us</h5>
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 col-sm-6 equal-height item">
-                        <div class="f-item link">
-                            <h4>Discover</h4>
-                            <ul>
-                                <li>
-                                    <a href="#">Explore Spaces</a>
-                                </li>
-                                <li>
-                                    <a href="#">Safety and Trust</a>
-                                </li>
-                                <li>
-                                    <a href="#">Payments made easy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Our History</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    --->
-                    <!---
-                    <div class="col-md-2 col-sm-6 equal-height item">
-                        <div class="f-item link">
-                            <h4>About</h4>
-                            <ul>
-
-                                <li>
-                                    <a href="#">News</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Careers</a>
-                                </li>
-                                <li>
-                                    <a href="#">Policies</a>
-                                </li>
-                                <li>
-                                    <a href="#">Privacy and Terms</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    --->
-<!---
-                    <div class="col-md-4 col-sm-6 equal-height item">
-                        <div class="f-item twitter-widget">
-                            <h4>Contact Info</h4>
-                            <p>
-                                 Please contact us.  We love to hear from you.
-                            </p>
-                            <div class="address">
-                                <ul>
-
-                                    <li>
-                                        <div class="icon">
-                                            <i class="fas fa-envelope"></i>
-                                        </div>
-                                        <div class="info">
-                                            <h5>Email:</h5>
-                                            <span>jenn@boxactly.com</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="fas fa-phone"></i>
-                                        </div>
-                                        <div class="info">
-                                            <h5>Phone:</h5>
-                                            <span>1-888-BOX-BUZZ</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        --->
         <!-- Start Footer Bottom -->
         <div class="footer-bottom">
             <div class="container">
