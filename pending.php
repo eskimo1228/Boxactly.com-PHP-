@@ -50,11 +50,9 @@
 </head>
 
 <body>
-
     <!-- Preloader Start -->
     <div class="se-pre-con"></div>
     <!-- Preloader Ends -->
-
     <!-- Header
     ============================================= -->
     <header id="home">
